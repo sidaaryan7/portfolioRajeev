@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --primary-color: #333333;
+    --secondary-color: #E0E0E0;
+    --third-color: #F8F8F8;
+    --fourth-color:#FFFFFF;
+
+
+}
+
+*{
+    font-family: "Montserrat";
+
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--secondary-color);
+  opacity: 1; /* Firefox */
+}
+body{
+    background-color: var(--primary-color);
+}
+a{
+    color:var(--secondary-color);
+    text-decoration: none;
+}
+input,textarea{
+    display: block;
+    width: 90%;
+    border: 1px solid #E0E0E0;
+    height: 45px;
+    background: none;
+    margin-bottom:5%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    
+}
+
+.headerText{
+    padding:5% 15%;
+    max-width: 50%;
+}
+
+.headerText p{
+    margin: 0 0 0 0;
+}
+
+.whiteSection{
+    height: 10px; width:94px ; background-color:#E0E0E0 ; margin-top: 10%;
+} 
+
+/* experince*/
+.experince{
+    padding:40px 50px;
+}
+
+.expContainer{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows:25% 25% 25% 25%;
+    padding-right: 10%;
+}
+
+/*my clinet section */
+.myClient{
+
+}
+
+.myClinetGrid{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 60%;
+    
+}
+
+.myClinetgrid-1 {
+    border-left: 1px solid white;
+    padding:5% 0 5% 5%;
+}
+
+.myClinetgrid-1 img{
+    border-radius: 100%;
+}
+
+/*myClinet icons*/
+.myClientIcons {
+    padding: 6% 0 6% 0;
+}
+
+
+.myClientIconsGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 30% 70%;
+    grid-row-gap: 20%;
+}
+
+.myClientIconsGrid-1{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    grid-column-gap: 1%;
+    grid-row-gap: 20%;
+}
+.myClientIconsGrid h1{
+    text-align: center;
+}
+
+/*contactme*/
+.contactmeGrid{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.contactmeGrid-img{
+    width: 87%;
+    height: 500px;
+}
+input[type="button"]{
+    background-color: var(--secondary-color);
+}
+
+textarea{
+    height: 90px;
+}
+
+p.grey.text-24 {
+    margin-top: 0;
+}
+
+/*footer*/
+.footer{
+    padding-top: 5%;
+}
+
+.footergrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    border-bottom: 1px solid white;
+
+}
+.footergrid-1{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+
+/*responsive design */
+
+
+@media screen and (max-width:500px){
+    .container{
+        
+    
+        
+    }
+
+
+    input, textarea {
+        width: 100%;
+    }
+    /*header*/
+    
+    .header{
+        flex-direction: column-reverse;
+        align-items: unset;
+        
+    }
+
+    .headerText{
+        padding: 0% 0%;
+        max-width: 100%;
+    }
+
+    .header img {
+        margin-top: 10%;
+    }
+
+    .whiteSection{
+        height: 4px;
+        width: 38px;
+    }
+
+    /*experince*/
+
+    .experince{
+        padding: 0px;
+        padding-top: 20%;
+    }
+    .experince p{
+        text-align: center;
+    }
+    .expContainer p {
+        text-align: left;
+    }
+    .expContainer{
+        grid-template-columns: 100%;
+    }
+
+    /* myClient */
+
+    .myClient{
+        padding-top: 20%;
+    }
+    .myClient-p{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .myClinetGrid{
+        grid-template-columns: 100%;
+    }
+
+    .myClinetgrid-1{
+        border: 0;
+        padding: 0;
+    }
+
+    .myClinetgrid-1 .text-15{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .myClinetgrid-1 .text-12{
+        font-weight: bold;
+    }
+
+    .myClinetgrid-1 .text-10{
+        font-size: 11px;
+    }
+
+    .myClientIconsGrid-1 {
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 12%;
+    grid-row-gap: 20%;
+    align-items: center;
+}
+
+/*contact me*/
+
+.contactme{
+    margin-top:60%;
+}
+
+.contactmeGrid{
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    grid-row-gap: 5%;
+}
+
+.contactmeGrid-img {
+    width: 100%;
+}
+
+/*footer*/
+
+.footer {
+    padding-top: 15%;
+    
+}
+
+.footergrid{
+    padding-bottom: 12%;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+}
+.footergrid-1
+{
+    grid-template-rows: 50% 50%;
+grid-template-columns: repeat(7,auto);
+grid-row-gap:20%;
+}
+
+.grey.text-20.mcustom {
+       text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+
+.text-10.grey.footerMenu-1 {
+    font-size: 15px;
+    font-weight: bold;
+    grid-row: 1/span1;
+    grid-column: 2/span3;
+}
+
+
+
+.text-10.grey.footerMenu-2 {
+    font-size: 15px;
+    font-weight: bold;
+    grid-row: 1/span1;
+    grid-column: 6/span7;
+}
+
+.text-10.grey.footerMenu-3 {
+    font-size: 15px;
+    font-weight: bold;
+    grid-row: 2/span2;
+    grid-column: 1/span3;
+}
+
+.text-10.grey.footerMenu-4 {
+    font-size: 15px;
+    font-weight: bold;
+    grid-row: 2/span2;
+    grid-column: 5/span6;
+}
+
+.text-10.grey.footerMenu-5 {
+    font-size: 15px;
+    font-weight: bold;
+    grid-row: 2/span2;
+    grid-column: 7/span7;
+}
+
+.text-10.grey.cpText {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-10.grey.cpText-1 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+
+}

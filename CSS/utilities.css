@@ -1,0 +1,132 @@
+.container{
+    max-width: 1100px;
+    margin:0 auto;
+    overflow: auto;
+    padding: 40px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*text colors*/
+.grey{
+    color:var(--secondary-color);
+
+}
+
+.white{
+    color:var(--fourth-color);
+}
+
+.greyV{
+    color:var(--third-color);
+}
+
+/*text size */
+
+    .text-lg{
+        font-family: Montserrat;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 88px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .text-24{
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .text-32{
+        font-family: Montserrat;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .text-16{
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .text-20{
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .text-10{
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .text-15{
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+    .text-12{
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .text-10{
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    @media screen and (max-width:500px){
+        .container {
+    padding: 40px 10px 0 10px;
+                    }
+    }
+
+
+
